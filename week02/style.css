@@ -1,5 +1,9 @@
 header{
         background-image: linear-gradient(to bottom right, #494693, #A3A0ED, #FFD9EC, #36B8CF);
+        font-family:'Courier New', Courier, monospace;
+        font-style: oblique;
+        font-weight: bold;
+        margin: 0%;
 }
 /* nav u1 {
     margin: 0 auto 0 auto;
@@ -22,10 +26,14 @@ a:hover {
     text-decoration: none;
 } */
 
-
+/* 
 img {
     border-radius: 50%;
-}
+} */
+
+/* .grid2 #img2 {
+    border-radius: 50%;
+} */
 
 
 nav u1 {
@@ -77,15 +85,24 @@ nav li{
 
 .grid2{
     display: grid;
-    grid-template-columns: 46% 23% 23%;
-    grid-template-rows: 15% 20% 20%;
-    padding-top: 12%;
-    padding-bottom:0%;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto;
+    padding: 2%;
     justify-content: center;
     gap: 100px;
     width: 1050px;
     margin:  auto;
 }
+
+.grid2 #img2{
+    grid-Column-start: 1;
+    grid-Column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin:  auto;
+}
+
+
 
 
 .grid2 #D2{
@@ -99,17 +116,24 @@ nav li{
     grid-Column-start: 2;
     grid-Column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
     justify-content: center;
-    margin:  auto;
+    
 }
+.grid2 #img3{
+    grid-Column-start: 2;
+    grid-Column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin:  auto;
 
+}
 .grid3{
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 20% 10% 30%;
     grid-template-rows: auto;
-    padding-top: 0%;
+    padding-top: 10%;
     padding-bottom:20%;
     gap: 80px;
     width: 1050px;
